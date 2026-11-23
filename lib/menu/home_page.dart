@@ -6,12 +6,12 @@ import 'package:pas_mobile/component/custom_makanan.dart';
 
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
+
+  final controller = Get.put(ListMakananController());
 
   @override
   Widget build(BuildContext context) {
-    
-  final controller = Get.put(ListMakananController());
     return Scaffold(
       backgroundColor: const Color(0xFFF5F7FB),
 
