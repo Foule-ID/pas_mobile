@@ -29,10 +29,7 @@ class LoginController extends GetxController{
 
           isLoading.value = false;
           if(response.statusCode == 200){
-            // final data = jsonDecode(response.body);
             loginModel.value = loginResponseFromJson(response.body);
-            // if(data['status'] == true){
-            //   Get.snackbar("Success", data['message']);
 
             if(loginModel.value?.status == true){
 
